@@ -70,7 +70,8 @@ function setup() {
 
 function draw() {
     //trex.debug = true;
-    background(255, 54, 90);
+    
+    background("skyblue");
     text("Score: " + score, 500, 50);
 
     if (gameState === PLAY) {
@@ -79,6 +80,7 @@ function draw() {
 
         if (keyDown("space") && trex.y >= 159) {
             trex.velocityY = -12;
+
         }
 
         trex.velocityY = trex.velocityY + 0.8
